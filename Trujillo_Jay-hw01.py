@@ -1,12 +1,10 @@
-# Your Name Here
+# Jay Trujllo
 # UWYO COSC 1010
-# Submission Date
+# 9/15/24
 # HW 01
-# Lab Section: 
+# Lab Section: 15
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Kaleb Moler
 
 # Homework Question:
 # 
@@ -30,6 +28,20 @@
 # whose average score is greater than 80.
 
 #Solution
+
+avg = {}
+for student in students:
+    name = student["name"]
+    scores = student["scores"]
+    Avg_score = sum(scores.values()) / len(scores)
+    print(f"{name} has an average score of {round(Avg_score,2)}")
+    avg[name] = Avg_score
+print("---------------------")
+for name, Avg_score in avg.items():
+  if Avg_score > 80:
+    print(f"{name} has an greater score than 80%.")
+  
+    
 
 
 
